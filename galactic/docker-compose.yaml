@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  surg_challenge:
+    container_name: surg_challenge
+    build: .
+    image: collaborativerobotics/ros-ambf-surg-challenge:galactic
+    network_mode: host
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    command: /run.sh
+    env_file: env
+    tty: true
+    stdin_open: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]

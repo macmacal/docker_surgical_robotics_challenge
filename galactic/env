@@ -1,0 +1,5 @@
+ROS1_DISTRO=noetic
+ROS2_DISTRO=galactic
+ROS_MASTER_URI=http://localhost:11311
+CYCLONEDDS_URI='<General><AllowMulticast>spdp</></>'
+DISPLAY
