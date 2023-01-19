@@ -1,7 +1,7 @@
 FROM collaborativerobotics/ambf-ros:galactic
 
 # Clone AMBF
-RUN cd && git clone -b master --single-branch https://github.com/collaborative-robotics/surgical_robotics_challenge.git
+RUN cd && git clone -b ros2_bridge --single-branch https://github.com/macmacal/surgical_robotics_challenge.git
 
 # Install scripts
 RUN cd /root/surgical_robotics_challenge/scripts \
